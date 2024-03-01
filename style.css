@@ -1,1 +1,18 @@
-im sped
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  background: #222;
+  background-image: url('https://source.unsplash.com/2560x1440/?landscape');
+  font-size: 110%;
+  }
+
+  #display {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 2.5em;
+    border-radius: 40px;
+    opacity: 0.85;
+  }
