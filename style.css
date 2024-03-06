@@ -1,67 +1,97 @@
-*{
-	margin: 0;
-	padding: 0;
-	font-family: 'Poppins', sans-serif;
-	box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ojuju&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-.container {
-	width: 100%;
-	min-height: 100vh;
-	background-image: linear-gradient(rgba(9, 0, 77, 0.65), rgba(9, 0, 77, 0.65)), url("images/background.png");
-	background-size: cover;
-	background-position: center;
-	padding: 10px 8%;
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(9, 0, 77, 0.2), rgba(9, 0, 77, 0.2)), url("https://vetsez.com/wp-content/uploads/2020/03/AdobeStock_291217289-copy.jpg");
+    height: 100%;
+    margin: 0;
 }
 
-nav {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 10px;
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(15, 15, 15, 0.3);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
 }
 
-.logo {
-	width: 180px;
-	cursor: pointer;
+.header .slogan {
+    font-family: 'Ojuju', sans-serif;
+    color: #fff;
+    text-align: center;
+    flex-grow: 1;
+    font-size: larger;
 }
 
-nav ul {
-	list-style: none;
-	width: 100%;
-	text-align: right;
-	padding-right: 60px;
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    padding: 10px 0;
 }
 
-nav ul li {
-	display: inline-block;
-	margin: 10px 20px;
+    .navbar a::before {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 2px;
+        background: #000;
+        opacity: 0;
+        transition: opacity 0.3s, transform 0.3s;
+        transform: translateY(-10px);
+    }
+
+    .navbar a:hover {
+        color: #ffffff;
+    }
+
+    .navbar a:hover::before {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+.content-wrapper {
+    width: 70%;
+    margin: 80px auto 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 
-nav ul li a {
-	color: #ffffff;
-	text-decoration: none;
+.centered-content h1,
+.centered-content p {
+    text-align: center;
+    margin-bottom: 1em; 
 }
 
-.btn {
-	display: flex;
-	align-items: center;
-	padding: 10px 20px;
-	border: 0;
-	outline: 0;
-	border-radius: 5px;
-	background: #f5168d;
-	color: #ffffff;
-	font-weight: 500;
-	cursor: pointer;
+
+.platform-section h2 {
+    font-weight: bold;
+    margin-top: 1em; 
 }
 
-.btn img {
-	width: 20px;
-	margin-right: 10px;
-}
-
-.content {
-	color: #ffffff;
+.platform-section p,
+.platform-section ul,
+.platform-section li {
+    text-align: left;
+    margin-left: 20px; 
 }
